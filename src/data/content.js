@@ -8,19 +8,19 @@ export const highlights = [
 export const programs = [
   {
     title: 'Public Speaking Lab',
-    detail: 'Weekly practice circles, impromptu rounds, and feedback from mentors.',
+    detail: '<strong>Weekly practice</strong> → impromptu rounds → <strong>mentor feedback</strong>',
   },
   {
     title: 'Debate & MUN',
-    detail: 'British Parliamentary drills, Model UN prep, and adjudication basics.',
+    detail: '<strong>British Parliamentary</strong> → Model UN → <strong>adjudication basics</strong>',
   },
   {
-    title: 'Creative Writing Studio',
-    detail: 'Short fiction, essays, and publishing clinics with peer review.',
+    title: 'Creative Writing',
+    detail: '<strong>Short fiction</strong> → essays → <strong>peer publishing</strong>',
   },
   {
     title: 'Career English',
-    detail: 'Resume polishing, interview simulations, and business communication.',
+    detail: '<strong>Resume</strong> → interviews → <strong>business communication</strong>',
   },
 ]
 

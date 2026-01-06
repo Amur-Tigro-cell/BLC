@@ -53,7 +53,7 @@ const FooterSection = ({ socialLinks, quickLinks, contacts }) => (
             </div>
           </div>
           <p className="footer-tagline">
-            Building confident communicators, one word at a time. Join us in our mission to foster eloquence and collaboration.
+            Building confident communicators, one conversation at a time.
           </p>
         </div>
 

@@ -10,17 +10,14 @@ const Hero = () => (
     <div className="hero__content">
       <p className="hero__eyebrow">✨ Welcome to Language Club</p>
       <h1 className="hero__title">
-        <span className="hero__title-main">BAIUST</span>
-        <span className="hero__title-secondary">Language Club</span>
+        Master Communication.
+        <span className="hero__title-secondary">Own Your Voice.</span>
       </h1>
       <p className="hero__description">
-        Join our vibrant community of <span className="accent">confident speakers, writers,</span> and
-        <span className="accent"> communicators.</span>
-        <br />
-        Learn, build, and grow together.
+        Join <span className="accent">180+ students</span> who speak with confidence, debate with conviction, and write with impact.
       </p>
       <div className="hero__actions">
-        <a className="button primary" href="#programs">Get Started</a>
+        <a className="button primary" href="#programs">Start Your First Workshop →</a>
         <a className="button ghost" href="#about">Learn More</a>
       </div>
     </div>

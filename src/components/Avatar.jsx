@@ -7,22 +7,22 @@ const getInitials = (name = '') => {
     .join('')
 }
 
-export default function Avatar({ name, image }) {
+export default function Avatar(props) {
+  const { name, image } = props
   const initials = getInitials(name)
-  const avatarStyle = image
-    ? { background: 'none', backgroundImage: `url(${image})` }
-    : undefined
+
+  if (image) {
+    return (
+      <div
+        className="avatar"
+        style={{ background: 'none', backgroundImage: `url(${image})` }}
+      >
+        <img src={image} alt={name} loading="lazy" decoding="async" style={{ display: 'none' }} />
+      </div>
+    )
+  }
 
   return (
-    <div
-      className="avatar"
-      data-initials={!image ? initials : undefined}
-      style={avatarStyle}
-      aria-hidden={image ? undefined : true}
-    >
-      {image && (
-        <img src={image} alt={name} loading="lazy" decoding="async" style={{ display: 'none' }} />
-      )}
-    </div>
+    <div className="avatar" data-initials={initials} />
   )
 }

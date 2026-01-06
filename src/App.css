@@ -1,14 +1,14 @@
 #root {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px 24px 80px;
+  padding: 64px 32px 96px;
   color: var(--text-primary);
 }
 
 .page {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
 
 .topnav {
@@ -19,7 +19,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 12px;
-  padding: 14px 18px;
+  padding: 16px 24px;
   background: rgba(10, 15, 29, 0.85);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(40, 167, 69, 0.3);
@@ -437,14 +437,14 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 32px;
 }
 
 .section__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 20px;
 }
 
 .section__header h2 {
@@ -471,20 +471,20 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  gap: 24px;
 }
 
 .cards {
-  gap: 16px;
+  gap: 24px;
 }
 
 .card {
   background: rgba(14, 19, 32, 0.75);
   border: 1px solid var(--stroke-soft);
   border-radius: 18px;
-  padding: 20px;
+  padding: 28px;
   display: grid;
-  gap: 10px;
+  gap: 14px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -539,7 +539,7 @@
 .highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 12px;
+  gap: 20px;
 }
 
 .tag {

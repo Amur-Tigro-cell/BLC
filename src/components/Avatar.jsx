@@ -10,10 +10,22 @@ const Avatar = ({ name, image }) => (
   <div
     className="avatar"
     data-initials={!image ? getInitials(name) : undefined}
-    style={image ? { backgroundImage: `url(${image})` } : undefined}
+    style={
+      image
+        ? { background: 'none', backgroundImage: `url(${image})` }
+        : undefined
+    }
     aria-hidden={image ? undefined : true}
   >
-    {image && <img src={image} alt={name} loading=\"lazy\" decoding=\"async\" style={{ display: 'none' }} />}
+    {image && (
+      <img
+        src={image}
+        alt={name}
+        loading="lazy"
+        decoding="async"
+        style={{ display: 'none' }}
+      />
+    )}
   </div>
 )
 

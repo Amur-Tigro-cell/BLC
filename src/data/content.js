@@ -10,21 +10,25 @@ export const programs = [
     title: 'Public Speaking Lab',
     detail: '<strong>Weekly practice</strong> → impromptu rounds → <strong>mentor feedback</strong>',
     beginner: 'Beginner-Friendly',
+    outcome: 'Deliver confident 3-minute speeches with strong presence and clarity',
   },
   {
     title: 'Debate & MUN',
     detail: '<strong>British Parliamentary</strong> → Model UN → <strong>adjudication basics</strong>',
     beginner: 'All Levels',
+    outcome: 'Win beginner tournaments and lead campus MUN delegations',
   },
   {
     title: 'Creative Writing',
     detail: '<strong>Short fiction</strong> → essays → <strong>peer publishing</strong>',
     beginner: 'Beginner-Friendly',
+    outcome: 'Get published in campus anthology and master storytelling craft',
   },
   {
     title: 'Career English',
     detail: '<strong>Resume</strong> → interviews → <strong>business communication</strong>',
     beginner: 'All Levels',
+    outcome: 'Land internships with polished interviews and professional writing skills',
   },
 ]
 
@@ -103,12 +107,42 @@ export const testimonials = [
     role: 'President, BLC',
     quote:
       'We built BAIUST Language Club to make confident speakers and curious writers the norm, not the exception.',
+    type: 'leadership',
+  },
+  {
+    name: 'Jannatul Firdous',
+    role: 'Member, Class of 2026',
+    quote:
+      'I couldn\'t string together a sentence in public. After 8 weeks in Speaking Lab, I presented my capstone project without notes. Game-changing.',
+    type: 'member',
+  },
+  {
+    name: 'Fahim Rahman',
+    role: 'Debate Champion, Class of 2025',
+    quote:
+      'BLC took me from never debating to winning regionals. The feedback culture here is unlike anywhere else on campus.',
+    type: 'member',
   },
   {
     name: 'Subro Sutradhar Apu',
-    role: 'Event Organizing & Planning Secretary',
+    role: 'Event Organizing Secretary',
     quote:
       'The weekly feedback loops and scrimmages sharpened my thinking and delivery in every class presentation.',
+    type: 'leadership',
+  },
+  {
+    name: 'Zainab Hussain',
+    role: 'Writer, Class of 2025',
+    quote:
+      'Getting my short story published in the anthology was surreal. But the real win? The confidence to submit to magazines now.',
+    type: 'member',
+  },
+  {
+    name: 'Arjun Das',
+    role: 'Intern at Tech Corp, Class of 2025',
+    quote:
+      'Career English prep got me the internship. The interview coaching and resume critiques made all the difference.',
+    type: 'member',
   },
 ]
 

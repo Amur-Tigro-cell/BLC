@@ -15,6 +15,9 @@ const ProgramsSection = ({ programs }) => (
             <span className="beginner-badge">{program.beginner}</span>
           )}
           <p dangerouslySetInnerHTML={{ __html: program.detail }}></p>
+          {program.outcome && (
+            <p className="program-outcome"><strong>Outcome:</strong> {program.outcome}</p>
+          )}
         </article>
       ))}
     </div>

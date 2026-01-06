@@ -35,6 +35,9 @@ function App() {
       <AboutSection />
       <ProgramsSection programs={programs} />
       <EventsSection events={events} />
+      <AdvisorsSection advisors={advisors} />
+      <TestimonialsSection testimonials={testimonials} />
+      <JoinSection contacts={contacts} />
       <TeamSection
         leadership={leadership}
         generalSecretariat={generalSecretariat}
@@ -42,9 +45,6 @@ function App() {
         mediaTeam={mediaTeam}
         organizingTeam={organizingTeam}
       />
-      <AdvisorsSection advisors={advisors} />
-      <TestimonialsSection testimonials={testimonials} />
-      <JoinSection contacts={contacts} />
       <FooterSection socialLinks={socialLinks} quickLinks={quickLinks} contacts={contacts} />
     </div>
   )

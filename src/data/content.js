@@ -9,18 +9,22 @@ export const programs = [
   {
     title: 'Public Speaking Lab',
     detail: '<strong>Weekly practice</strong> → impromptu rounds → <strong>mentor feedback</strong>',
+    beginner: 'Beginner-Friendly',
   },
   {
     title: 'Debate & MUN',
     detail: '<strong>British Parliamentary</strong> → Model UN → <strong>adjudication basics</strong>',
+    beginner: 'All Levels',
   },
   {
     title: 'Creative Writing',
     detail: '<strong>Short fiction</strong> → essays → <strong>peer publishing</strong>',
+    beginner: 'Beginner-Friendly',
   },
   {
     title: 'Career English',
     detail: '<strong>Resume</strong> → interviews → <strong>business communication</strong>',
+    beginner: 'All Levels',
   },
 ]
 

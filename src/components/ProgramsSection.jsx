@@ -11,6 +11,9 @@ const ProgramsSection = ({ programs }) => (
       {programs.map((program) => (
         <article className="card" key={program.title}>
           <h3>{program.title}</h3>
+          {program.beginner && (
+            <span className="beginner-badge">{program.beginner}</span>
+          )}
           <p dangerouslySetInnerHTML={{ __html: program.detail }}></p>
         </article>
       ))}

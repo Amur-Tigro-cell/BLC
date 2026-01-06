@@ -8,7 +8,7 @@ const Hero = () => (
     </div>
     
     <div className="hero__content">
-      <div className="activity-badge">✓ Just wrapped Winter Eloquence Fest</div>
+      <div className="activity-badge">✓ Next: Winter Eloquence Fest — Feb 12</div>
       <p className="hero__eyebrow">✨ Welcome to Language Club</p>
       <h1 className="hero__title">
         Master Communication.

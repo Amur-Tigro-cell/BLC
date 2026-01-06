@@ -5,6 +5,33 @@ export const highlights = [
   { label: 'Partner campuses', value: '4' },
 ]
 
+export const gettingStarted = [
+  {
+    title: 'Attend Weekly Open Session',
+    description: 'Show up Saturday at 3:00 PM. No registration needed. Meet the community and try an activity.',
+    time: 'Every Saturday, 3:00 PM',
+    icon: '📅',
+  },
+  {
+    title: 'Join a Program Track',
+    description: 'Pick Public Speaking, Debate, Writing, or Career English. Weekly sessions with mentor feedback.',
+    time: '1-2 hours per week',
+    icon: '🎯',
+  },
+  {
+    title: 'Attend an Event',
+    description: 'Festivals, competitions, and workshops. Beginner-friendly events marked with a badge below.',
+    time: '1-2 per month',
+    icon: '🎪',
+  },
+  {
+    title: 'Get Your First Win',
+    description: 'Deliver your first speech, write your first story, or win your first debate round.',
+    time: '4-8 weeks',
+    icon: '🏆',
+  },
+]
+
 export const programs = [
   {
     title: 'Public Speaking Lab',
@@ -43,6 +70,7 @@ export const events = [
     type: 'Flagship',
     description: 'Campus-wide keynote, story slam, and panel on global communication.',
     status: 'upcoming',
+    firstTimer: true,
   },
   {
     title: 'Public Speaking Workshop',
@@ -54,6 +82,7 @@ export const events = [
     type: 'Workshop',
     description: 'Learn presentation techniques and overcome stage fright with practical exercises.',
     status: 'upcoming',
+    firstTimer: true,
   },
   {
     title: 'MUN Bootcamp',
@@ -87,6 +116,7 @@ export const events = [
     type: 'Community',
     description: 'Casual Friday night stage with music, poetry, and short fiction.',
     status: 'upcoming',
+    firstTimer: true,
   },
   {
     title: 'Writing Workshop Series',

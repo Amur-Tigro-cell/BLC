@@ -13,11 +13,9 @@ const EventsSection = ({ events }) => {
   }
 
   const addToCalendar = (event) => {
-    // Parse the event date and time
     const eventDate = new Date(event.date)
     const [startTime, endTime] = event.time.split(' - ')
     
-    // Convert time to 24-hour format and create start/end dates
     const startDateTime = new Date(eventDate)
     const [startHour, startMinute] = startTime.match(/\d+/g)
     const startPeriod = startTime.match(/AM|PM/)[0]
@@ -34,7 +32,6 @@ const EventsSection = ({ events }) => {
     if (endPeriod === 'AM' && endHourNum === 12) endHourNum = 0
     endDateTime.setHours(endHourNum, parseInt(endMinute) || 0, 0)
     
-    // Format for Google Calendar
     const formatDateForGoogle = (date) => {
       return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
     }
@@ -45,10 +42,8 @@ const EventsSection = ({ events }) => {
     const startStr = formatDateForGoogle(startDateTime)
     const endStr = formatDateForGoogle(endDateTime)
     
-    // Create Google Calendar URL
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startStr}/${endStr}&details=${description}&location=${location}`
     
-    // Open in new window
     window.open(googleCalendarUrl, '_blank')
   }
 
@@ -81,6 +76,7 @@ const EventsSection = ({ events }) => {
                   <div className="event-tags">
                     <span className={`tag event-type ${event.type.toLowerCase()}`}>{event.type}</span>
                     <span className={`tag status-badge ${status.class}`}>{status.text}</span>
+                    {event.firstTimer && <span className="tag first-timer-badge">✓ First-Timer Friendly</span>}
                   </div>
                   <div className="event-time">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -118,14 +114,8 @@ const EventsSection = ({ events }) => {
       </div>
 
       <div className="events-cta">
-        <p>Want to stay updated on all our events?</p>
-        <a className="button primary" href="#contact">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-          Subscribe to Updates
-        </a>
+        <p>Can't find what you're looking for?</p>
+        <a className="link" href="#contact">Tell us what you want to learn →</a>
       </div>
     </section>
   )

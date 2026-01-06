@@ -166,7 +166,7 @@ export const mediaTeam = [
     name: 'Israt Jahan Erin',
     role: 'Media & Publication Secretary',
     focus: 'Content calendars and editorial approvals.',
-    image: '',
+    image: '/team/israt-jahan-erin.jpeg',
   },
   {
     name: 'Nusrat Jahan Sifat',

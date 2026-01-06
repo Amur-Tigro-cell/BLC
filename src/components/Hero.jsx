@@ -17,8 +17,7 @@ const Hero = () => (
         Join <span className="accent">180+ students</span> who speak with confidence, debate with conviction, and write with impact.
       </p>
       <div className="hero__actions">
-        <a className="button primary" href="#programs">Start Your First Workshop →</a>
-        <a className="button ghost" href="#about">Learn More</a>
+        <a className="button primary" href="#contact">Join the Club →</a>
       </div>
     </div>
 

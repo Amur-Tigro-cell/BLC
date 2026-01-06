@@ -17,15 +17,7 @@ const Avatar = ({ name, image }) => (
     }
     aria-hidden={image ? undefined : true}
   >
-    {image && (
-      <img
-        src={image}
-        alt={name}
-        loading="lazy"
-        decoding="async"
-        style={{ display: 'none' }}
-      />
-    )}
+    {image && <img src={image} alt={name} loading="lazy" decoding="async" style={{ display: 'none' }} />}
   </div>
 )
 

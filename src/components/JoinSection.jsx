@@ -52,6 +52,10 @@ const JoinSection = ({ contacts }) => {
             </div>
           )}
 
+          <div className="trust-note">
+            💬 <strong>We respond within 24 hours</strong> — usually within 2
+          </div>
+
           <form onSubmit={handleSubmit} className="signup-form">
             <div className="form-group">
               <label htmlFor="name">Full Name *</label>

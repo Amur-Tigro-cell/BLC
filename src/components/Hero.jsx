@@ -8,6 +8,7 @@ const Hero = () => (
     </div>
     
     <div className="hero__content">
+      <div className="activity-badge">✓ Just wrapped Winter Eloquence Fest</div>
       <p className="hero__eyebrow">✨ Welcome to Language Club</p>
       <h1 className="hero__title">
         Master Communication.

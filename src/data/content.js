@@ -250,18 +250,21 @@ export const advisors = [
     name: 'Kazi Shahidul Islam',
     role: 'Advisor, Language Club',
     department: 'Assistant Professor (Dept. of ENG)',
+    credential: '15+ years teaching English & Communication',
     image: '/team/shahidul-islam.jpeg',
   },
   {
     name: 'Imran Hossain',
     role: 'Member, Language Club',
     department: 'Lecturer (Dept. of Business Administration)',
+    credential: 'Expert in professional communication & presentations',
     image: '/team/imran-hossain.jpeg',
   },
   {
     name: 'Sharmin Akter',
     role: 'Member Secretary, Language Club',
     department: 'Lecturer (Dept. of Science and Humanities)',
+    credential: 'Specialized in creative writing & literary analysis',
     image: '/team/sharmin-akter.jpeg',
   },
 ]

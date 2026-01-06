@@ -378,13 +378,13 @@
 .button.primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
   color: #ffffff;
-  box-shadow: 0 10px 30px rgba(40, 167, 69, 0.4);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.25);
   border: 1px solid rgba(52, 208, 88, 0.5);
 }
 
 .button.primary:hover {
   background: linear-gradient(135deg, var(--primary-light), var(--primary));
-  box-shadow: 0 12px 40px rgba(40, 167, 69, 0.5);
+  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.35);
   border-color: var(--primary-light);
   transform: scale(1.05);
 }
@@ -393,12 +393,12 @@
   padding: 16px 48px;
   font-size: 18px;
   font-weight: 700;
-  box-shadow: 0 8px 24px rgba(40, 167, 69, 0.4);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.25);
 }
 
 .hero__actions .button.primary:hover {
-  box-shadow: 0 12px 32px rgba(40, 167, 69, 0.6);
-  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(40, 167, 69, 0.35);
+  transform: scale(1.05);
 }
 
 .button.ghost {

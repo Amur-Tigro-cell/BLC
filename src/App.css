@@ -223,11 +223,28 @@
   padding: 8px 0;
   border-bottom: 2px solid transparent;
   transition: color 140ms ease, border-color 140ms ease;
+  position: relative;
+}
+
+.topnav__links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
 
 .topnav__links a:hover {
   color: var(--text-primary);
   border-color: var(--secondary);
+}
+
+.topnav__links a:hover::after {
+  width: 100%;
 }
 
 .hero {
@@ -369,6 +386,10 @@
   min-width: 44px;
 }
 
+.button:active {
+  transform: scale(0.98);
+}
+
 .button.small {
   padding: 12px 20px;
   font-size: 0.95rem;
@@ -503,7 +524,7 @@
 .card:hover {
   transform: translateY(-8px);
   border-color: rgba(0, 217, 255, 0.5);
-  box-shadow: 0 12px 40px rgba(0, 217, 255, 0.15);
+  box-shadow: 0 16px 48px rgba(0, 217, 255, 0.2);
 }
 
 .card.focus {
@@ -1006,12 +1027,27 @@
   transition: all 0.2s ease;
 }
 
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  transition: all 0.3s ease;
+  display: block;
+}
+
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
   border-color: var(--accent);
   background: rgba(14, 19, 32, 0.8);
   box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label {
+  transform: translateY(-24px) scale(0.85);
+  color: var(--accent);
 }
 
 .form-group input::placeholder {
@@ -1042,6 +1078,14 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 1rem;
+  animation: successSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.success-message::before {
+  content: '✓';
+  display: inline-block;
+  margin-right: 8px;
+  animation: checkmarkPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .join-sidebar {
@@ -1841,6 +1885,67 @@
   }
   50% {
     box-shadow: 0 10px 30px rgba(40, 167, 69, 0.6), 0 0 20px rgba(40, 167, 69, 0.4);
+  }
+}
+
+@keyframes successSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes checkmarkPop {
+  0% {
+    transform: scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes successSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes checkmarkPop {
+  0% {
+    transform: scale(0) rotate(-45deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes staggeredFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

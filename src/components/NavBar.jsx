@@ -40,9 +40,6 @@ const NavBar = () => {
         <a href="#events" onClick={closeMenu}>Events</a>
         <a href="#team" onClick={closeMenu}>Team</a>
         <a href="#contact" onClick={closeMenu}>Contact</a>
-        <a className="button primary small mobile-join" href="#contact" onClick={closeMenu}>
-          Join us
-        </a>
       </div>
 
       <a className="button primary small desktop-join" href="#contact">

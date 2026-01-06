@@ -6,13 +6,33 @@
   font-weight: 500;
   background-color: #0a0f1d;
   color: #ffffff;
+  
+  /* Primary Brand - Green (Growth, Learning, Action) */
+  --primary: #28a745;
+  --primary-light: #34d058;
+  --primary-dark: #1e7a34;
+  
+  /* Secondary Brand - Cyan (Communication, Interactive) */
+  --secondary: #00d9ff;
+  --secondary-light: #33e1ff;
+  --secondary-dark: #00a5c7;
+  
+  /* Accent - Amber (Attention, Featured) */
+  --accent: #fbbf24;
+  --accent-light: #fcd34d;
+  --accent-dark: #f59e0b;
+  
+  /* Neutrals */
+  --bg-dark: #0a0f1d;
+  --bg-card: rgba(14, 19, 32, 0.75);
   --text-primary: #ffffff;
   --text-muted: #c8d6e5;
   --text-soft: #a8b8c8;
-  --accent: #28a745;
-  --accent-light: #34d058;
-  --accent-dark: #1e7a34;
   --stroke-soft: rgba(40, 167, 69, 0.25);
+  
+  /* Legacy aliases for backward compatibility */
+  --accent-legacy: var(--primary);
+  
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
